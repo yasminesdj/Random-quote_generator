@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
@@ -9,11 +8,12 @@
 }
 
 body {
-    background: #f8d9f5;
+    background: rgb(244, 199, 247);
+   
 }
 
 .quote-box {
-    background: rgba(255, 255, 255, 0.7); 
+    background: linear-gradient(to bottom right, #ffadd3, #d6a4f9); 
     width: 700px;
     position: absolute;
     top: 50%;
@@ -22,9 +22,12 @@ body {
     padding: 40px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
-    
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15),
+                0 0 20px #ef89c8,
+                0 0 40px #d98dd3; 
+    border: 2px solid #f89cff; 
 }
+
 
 .quote-box h2 {
     font-size: 32px;
@@ -37,7 +40,7 @@ body {
     width: 75px;
     height: 3px;
     border-radius: 3px;
-    background: linear-gradient(to right, #e16da3, #d6a4f9);
+    background: linear-gradient(to right, #a467b7, #ff6ce2);
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -61,7 +64,7 @@ body {
     float: right;
     position: relative;
     font-style: italic; 
-    color: #7b7a7a; 
+    color: #504d4d; 
 
 }
 
@@ -69,7 +72,7 @@ body {
     content: '';
     width: 20px;
     height: 2px;
-    background: linear-gradient(to right, #e16da3, #d6a4f9);
+    background: linear-gradient(to right, #a467b7, #ff6ce2);
     position: absolute;
     top: 50%;
     left: -30px;
@@ -83,7 +86,8 @@ body {
 }
 
 .quote-box button {
-    background: linear-gradient(to right, #ffadd3, #d6a4f9);
+    background: linear-gradient(to right, #a467b7, #ff6ce2);
+    color: white;
     border-radius: 25px;
     border: none; 
     width: 150px;
@@ -93,11 +97,16 @@ body {
     justify-content: center;
     margin: 5px;
     cursor: pointer;
-    font-size: 16px; 
+    font-size: 18px; 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 .quote-box button:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
     transform: translateY(-3px); 
+}
+.icon {
+    width: 30px; 
+    vertical-align: middle;
+    margin-right: 10px; 
 }
